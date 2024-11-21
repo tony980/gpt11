@@ -1,0 +1,138 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px; /* Match px-8 py-4 */
+    background-color: #052d56;
+    color: white;
+    position: relative;
+    font-family: sans-serif;
+  }
+  
+  .logo {
+    font-size: 1.5rem; /* Match Tailwind's text-2xl */
+    font-weight: bold;
+  }
+  
+  /* Hamburger Icon */
+  .hamburger {
+    display: none;
+  }
+  
+  .hamburger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .hamburger-icon {
+    width: 24px; /* Match Tailwind's w-6 */
+    height: 24px; /* Match Tailwind's h-6 */
+    stroke: white; /* Ensure icon is white */
+  }
+  
+  /* Menu Items */
+  .menu {
+    display: flex;
+    gap: 32px; /* Match Tailwind's space-x-8 */
+    list-style: none; /* Removed the default dot behavior */
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.875rem; /* Match Tailwind's text-sm */
+  }
+  
+  .menu li a:hover {
+    text-decoration: underline; /* Hover effect */
+  }
+  
+  /* Action Buttons */
+  .actions {
+    display: flex;
+    gap: 16px; /* Match Tailwind's space-x-4 */
+  }
+  
+  .actions .signin {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 0.875rem; /* Match Tailwind's text-sm */
+    font-weight: 600; /* Match Tailwind's font-semibold */
+    cursor: pointer;
+  }
+  
+  .actions .demo {
+    background-color: #f97316; /* Match Tailwind's bg-orange-500 */
+    color: white;
+    padding: 8px 16px; /* Match Tailwind's px-4 py-2 */
+    border-radius: 4px; /* Match Tailwind's rounded */
+    font-size: 0.875rem; /* Match Tailwind's text-sm */
+    font-weight: 600; /* Match Tailwind's font-semibold */
+    cursor: pointer;
+  }
+  
+  .actions .demo:hover {
+    background-color: #ea580c; /* Match Tailwind's hover:bg-orange-600 */
+  }
+  
+  /* Mobile Menu */
+  .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #052d56;
+    text-align: center;
+    padding: 16px 0;
+  }
+  
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mobile-menu li {
+    margin: 8px 0;
+  }
+  
+  .mobile-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.875rem; /* Match Tailwind's text-sm */
+  }
+  
+  .mobile-menu li a:hover {
+    text-decoration: underline;
+  }
+  
+  .mobile-menu .demo {
+    background-color: #f97316; /* Same as big screen */
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .mobile-menu .demo:hover {
+    background-color: #ea580c; /* Same as big screen */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .menu,
+    .actions {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  

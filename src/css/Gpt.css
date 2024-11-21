@@ -1,0 +1,205 @@
+.gpt3-section {
+  background-color: #031B34;
+  color: white;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.main-card-container {
+  background-color: #042C54;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.what-is-section {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically by default */
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: column; /* Stack heading elements vertically */
+  align-items: center; /* Center-align content horizontally */
+}
+
+.heading-line {
+  margin-bottom: 0.5rem;
+  border-top: 4px solid #e19455;
+  width: 4rem;
+  align-self: start;
+}
+
+.heading-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.description {
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.description p {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.6;
+}
+
+.possibilities-section {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically by default */
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.possibilities-text {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  color: #df92d2;
+  white-space: pre-wrap;
+}
+
+.possibilities-text .highlighted {
+  color: #f0ab7c;
+}
+
+.explore-link-container {
+  margin-top: 1rem;
+}
+
+.explore-link {
+  color: #FF8A71;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+.explore-link:hover {
+  text-decoration: underline;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Default: stack features vertically */
+  gap: 1.5rem;
+}
+
+.feature {
+  background-color: #042C54;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-line {
+  border-top: 4px solid #e19455;
+  width: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: semi-bold;
+  color: white;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Responsive styles for larger screens (min-width: 768px) */
+@media (min-width: 768px) {
+  .what-is-section {
+    flex-direction: row; /* Align the section horizontally on larger screens */
+    justify-content: space-between;
+  }
+
+  .description {
+    max-width: 60%;
+    text-align: left;
+    padding-left: 2rem;
+  }
+
+  .possibilities-section {
+    display: flex;
+    flex-direction: row; /* Align possibilities and explore link in a row */
+    justify-content: space-between; /* Spread out elements */
+    align-items: center; /* Align vertically */
+    text-align: left;
+  }
+
+  .features-container {
+    grid-template-columns: repeat(3, 1fr); /* Arrange features in 3 columns */
+  }
+
+  /* Ensure the "possibilities-text" remains in one line, while "explore link" stays next to it */
+  .possibilities-text {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    color: #df92d2;
+    white-space: nowrap;
+  }
+
+  .explore-link-container {
+    margin-left: 2rem; /* Add spacing between text and the button */
+  }
+}
+
+/* Responsive styles for smaller screens (max-width: 767px) */
+@media (max-width: 767px) {
+  .what-is-section {
+    flex-direction: column; /* Stack vertically for smaller screens */
+    align-items: flex-start; /* Align to the left */
+  }
+
+  .heading-text {
+    text-align: left; /* Align heading to the left */
+  }
+
+  .description {
+    text-align: left; /* Align description to the left */
+    padding-left: 0; /* Remove padding for small screens */
+  }
+
+  .description p {
+    text-align: left; /* Align paragraph text to the left */
+    font-size: 1rem;
+  }
+
+  .possibilities-section {
+    text-align: left; /* Align text and explore button to the left */
+    align-items: flex-start; /* Align items to the left */
+  }
+  .possibilities-text {
+    font-size: 1.5rem; /* Adjust font size */
+    white-space: normal; /* Allow wrapping on smaller screens */
+    word-wrap: break-word; /* Allow words to break if needed */
+  }
+
+ 
+  .explore-link-container {
+    margin-left: 0; /* Align the link to the left */
+  }
+
+  .features-container {
+    grid-template-columns: 1fr; /* Stack features vertically on small screens */
+  }
+
+  .feature {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+}
