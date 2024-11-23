@@ -1,6 +1,6 @@
 import React from 'react';
 import Illustration from '../images/Illustration.png'; 
-import '../css/Header.css';  // Import the CSS file
+import '../css/Header.css';  
 
 
 const Header = () => {

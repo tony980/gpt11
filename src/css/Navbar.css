@@ -1,4 +1,4 @@
-/* Navbar Styles */
+
 .navbar {
     display: flex;
     align-items: center;
@@ -11,7 +11,7 @@
   }
   
   .logo {
-    font-size: 1.5rem; /* Match Tailwind's text-2xl */
+    font-size: 1.5rem;
     font-weight: bold;
   }
   
@@ -28,22 +28,22 @@
   }
   
   .hamburger-icon {
-    width: 24px; /* Match Tailwind's w-6 */
-    height: 24px; /* Match Tailwind's h-6 */
-    stroke: white; /* Ensure icon is white */
+    width: 24px; 
+    height: 24px; 
+    stroke: white; 
   }
   
   /* Menu Items */
   .menu {
     display: flex;
-    gap: 32px; /* Match Tailwind's space-x-8 */
-    list-style: none; /* Removed the default dot behavior */
+    gap: 32px; 
+    list-style: none;
   }
   
   .menu li a {
     text-decoration: none;
     color: white;
-    font-size: 0.875rem; /* Match Tailwind's text-sm */
+    font-size: 0.875rem;
   }
   
   .menu li a:hover {
@@ -53,30 +53,30 @@
   /* Action Buttons */
   .actions {
     display: flex;
-    gap: 16px; /* Match Tailwind's space-x-4 */
+    gap: 16px;
   }
   
   .actions .signin {
     background: none;
     border: none;
     color: white;
-    font-size: 0.875rem; /* Match Tailwind's text-sm */
-    font-weight: 600; /* Match Tailwind's font-semibold */
+    font-size: 0.875rem;
+    font-weight: 600;
     cursor: pointer;
   }
   
   .actions .demo {
-    background-color: #f97316; /* Match Tailwind's bg-orange-500 */
+    background-color: #f97316;
     color: white;
-    padding: 8px 16px; /* Match Tailwind's px-4 py-2 */
-    border-radius: 4px; /* Match Tailwind's rounded */
-    font-size: 0.875rem; /* Match Tailwind's text-sm */
-    font-weight: 600; /* Match Tailwind's font-semibold */
+    padding: 8px 16px; 
+    border-radius: 4px; 
+    font-size: 0.875rem; 
+    font-weight: 600; 
     cursor: pointer;
   }
   
   .actions .demo:hover {
-    background-color: #ea580c; /* Match Tailwind's hover:bg-orange-600 */
+    background-color: #ea580c; 
   }
   
   /* Mobile Menu */
@@ -103,7 +103,7 @@
   .mobile-menu li a {
     text-decoration: none;
     color: white;
-    font-size: 0.875rem; /* Match Tailwind's text-sm */
+    font-size: 0.875rem; 
   }
   
   .mobile-menu li a:hover {

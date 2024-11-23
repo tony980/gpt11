@@ -59,7 +59,7 @@
   margin-top: 1rem;
 }
 
-/* Email Form */
+
 .email-form {
   display: flex;
   justify-content: center;
@@ -86,7 +86,7 @@
 }
 
 .email-input::placeholder {
-  color: #d1d1d1; /* Light gray placeholder */
+  color: #d1d1d1; 
 }
 
 .get-started-btn {
@@ -106,7 +106,7 @@
   background-color: #D93C1A;
 }
 
-/* Image Section */
+
 .image-section {
   display: flex;
   justify-content: center;
@@ -115,7 +115,7 @@
 
 .image {
   position: relative;
-  top: -1rem; /* Adjust this value to push the image up */
+  top: -1rem; 
   width: 100%;
   height: auto;
   object-fit: cover; /* Ensures the image fits well in the container */

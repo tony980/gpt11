@@ -1,7 +1,7 @@
 import React from 'react';
-import '../css/Logo.css'; // Import the CSS for styles
+import '../css/Logo.css'; 
 
-// Import logos
+
 import GoogleLogo from '../images/google.png';
 import SlackLogo from '../images/slack.png';
 import AtlassianLogo from '../images/atlassian.png';
